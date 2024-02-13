@@ -1,0 +1,23 @@
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("green.jpg");
+
+
+    background-size: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+body{
+    
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
