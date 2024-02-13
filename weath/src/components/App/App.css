@@ -1,0 +1,9 @@
+.app{
+    width: 500px;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    box-shadow: 1px 1px rgb(137, 137, 137);
+    color: rgb(255, 255, 255);
+}
