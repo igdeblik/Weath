@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
-import "./Form.css";
+import { useState } from "react";
+import "./WeatherBlock.css";
 
 let temperature;
 let clouds = "";
 let name = "";
 
-export const Form = ({ defaultCity }) => {
-  const [city = "Gomel", setCity] = useState(" ");
+export const WeatherBlock = ({ defaultCity }) => {
+  const [city, setCity] = useState();
+
+  !city ? getWeather(defaultCity) : console.log("init");
 
   async function getWeather(city) {
     try {
@@ -26,7 +28,7 @@ export const Form = ({ defaultCity }) => {
     e.target[0].value = "";
   };
   return (
-    <form action="" onSubmit={submit}>
+    <form className="weather-block" action="" onSubmit={submit}>
       <input type="text" placeholder="City" />
       <h1>{name}</h1>
       <p>{temperature}</p>

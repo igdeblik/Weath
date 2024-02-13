@@ -1,10 +1,12 @@
 import "./App.css";
-import { Form, from } from "../Form/Form";
+import { WeatherBlock } from "../WeatherBlock/WeatherBlock";
 
 export const App = () => {
   return (
     <div className="app">
-      <Form defaultCity={"Gomel"} />
+      <div className="widget-area">
+        <WeatherBlock defaultCity={"Gomel"} />
+      </div>
     </div>
   );
 };
